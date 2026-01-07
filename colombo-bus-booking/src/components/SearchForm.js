@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { Search, MapPin, Calendar } from 'lucide-react';
-import { locations } from '@/data/busRoutes';
+import { locations } from '../data/busRoutes';
 
 export default function SearchForm({ onSearch }) {
   const [from, setFrom] = useState('');

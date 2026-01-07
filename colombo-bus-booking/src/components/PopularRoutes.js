@@ -1,7 +1,7 @@
 'use client';
 
 import { Clock, DollarSign, Bus } from 'lucide-react';
-import { busRoutes } from '@/data/busRoutes';
+import { busRoutes } from '../data/busRoutes';
 import { useState } from 'react';
 
 export default function PopularRoutes() {

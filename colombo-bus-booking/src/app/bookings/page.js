@@ -1,8 +1,8 @@
 'use client';
 
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
-import Chatbot from '@/components/Chatbot';
+import Navbar from '../../components/Navbar';
+import Footer from '../../components/Footer';
+import Chatbot from '../../components/Chatbot';
 import { Calendar, MapPin, Clock, CreditCard } from 'lucide-react';
 
 export default function BookingsPage() {

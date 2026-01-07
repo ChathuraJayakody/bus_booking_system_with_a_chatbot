@@ -50,7 +50,6 @@ export default function Chatbot() {
 
   return (
     <>
-      {/* Chat Button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
         className="fixed bottom-6 right-6 bg-blue-600 text-white p-4 rounded-full shadow-lg hover:bg-blue-700 transition z-50"
@@ -58,16 +57,13 @@ export default function Chatbot() {
         {isOpen ? <X className="h-6 w-6" /> : <MessageCircle className="h-6 w-6" />}
       </button>
 
-      {/* Chat Window */}
       {isOpen && (
         <div className="fixed bottom-24 right-6 w-96 h-[500px] bg-white rounded-lg shadow-2xl flex flex-col z-50">
-          {/* Header */}
           <div className="gradient-bg text-white p-4 rounded-t-lg">
             <h3 className="font-bold text-lg">Bus Booking Assistant</h3>
             <p className="text-sm text-gray-200">Ask me anything about routes and bookings</p>
           </div>
 
-          {/* Messages */}
           <div className="flex-1 overflow-y-auto p-4 space-y-4">
             {messages.map((msg, idx) => (
               <div
@@ -99,7 +95,6 @@ export default function Chatbot() {
             <div ref={messagesEndRef} />
           </div>
 
-          {/* Input */}
           <form onSubmit={handleSubmit} className="p-4 border-t">
             <div className="flex gap-2">
               <input
