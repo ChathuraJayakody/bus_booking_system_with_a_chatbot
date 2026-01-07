@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { busRoutes, locations, chatbotKnowledge } from '@/data/busRoutes';
+import { busRoutes, locations, chatbotKnowledge } from '../../../data/busRoutes';
 
 export async function POST(request) {
   try {

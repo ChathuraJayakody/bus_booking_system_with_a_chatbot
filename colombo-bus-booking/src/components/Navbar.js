@@ -16,7 +16,6 @@ export default function Navbar() {
             <span className="font-bold text-xl text-gray-800">Colombo Bus</span>
           </Link>
 
-          {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
             <Link href="/" className="text-gray-700 hover:text-blue-600 transition">
               Home
@@ -35,7 +34,6 @@ export default function Navbar() {
             </button>
           </div>
 
-          {/* Mobile Menu Button */}
           <button 
             className="md:hidden"
             onClick={() => setIsOpen(!isOpen)}
@@ -44,7 +42,6 @@ export default function Navbar() {
           </button>
         </div>
 
-        {/* Mobile Menu */}
         {isOpen && (
           <div className="md:hidden pb-4">
             <Link href="/" className="block py-2 text-gray-700 hover:text-blue-600">
