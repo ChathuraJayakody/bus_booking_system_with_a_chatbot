@@ -4,6 +4,7 @@ const helmet = require('helmet');
 const morgan = require('morgan');
 
 const busRoutes = require('./routes/busRoutes');
+const bookingRoutes = require('./routes/bookingRoutes'); // ✅ ADD THIS
 
 const app = express();
 
@@ -15,6 +16,7 @@ app.use(express.json()); // Body parser
 
 // Routes
 app.use('/api/v1/buses', busRoutes);
+app.use('/api/bookings', bookingRoutes); // ✅ ADD THIS
 
 // 404 Handler
 app.use((req, res) => {
